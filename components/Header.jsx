@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { motion, AnimatePresence } from "framer-motion";
 import { FaBars, FaXmark } from "react-icons/fa6";
 import { useLang } from "@/lib/i18n";
 
@@ -91,51 +90,41 @@ export default function Header() {
         </div>
       </div>
 
-      <AnimatePresence>
-        {open && (
-          <>
-            <motion.div
-              className="fixed inset-0 z-40 bg-black/40 lg:hidden"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              onClick={() => setOpen(false)}
-            />
-            <motion.aside
-              className="fixed right-0 top-0 z-50 flex h-full w-72 flex-col gap-2 p-6 shadow-lift lg:hidden"
-              style={{ backgroundColor: "#FFFFFF" }}
-              initial={{ x: "100%" }}
-              animate={{ x: 0 }}
-              exit={{ x: "100%" }}
-              transition={{ type: "tween", duration: 0.28 }}
-            >
-              <button
-                onClick={() => setOpen(false)}
-                aria-label="Close menu"
-                className="mb-4 self-end text-maroon"
-              >
-                <FaXmark size={24} />
-              </button>
-              {navItems.map((item) => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className={`rounded-lg px-3 py-2 font-medium transition-colors hover:bg-saffron/10 hover:text-saffron ${
-                    pathname === item.href ? "text-saffron" : "text-stone-700"
-                  }`}
-                >
-                  {t(item.key)}
-                </Link>
-              ))}
-              <div className="mt-2 border-t border-stone-200 pt-3 pl-3 text-sm text-stone-500">
-                <Link href="/arti-sangrah/aarti" className="block py-1 hover:text-saffron">• {t("nav.aarti")}</Link>
-                <Link href="/arti-sangrah/chalisa" className="block py-1 hover:text-saffron">• {t("nav.chalisa")}</Link>
-                <Link href="/arti-sangrah/bhajan" className="block py-1 hover:text-saffron">• {t("nav.bhajan")}</Link>
-              </div>
-            </motion.aside>
-          </>
-        )}
-      </AnimatePresence>
+      {open && (
+        <div
+          className="fixed inset-0 z-40 bg-black/40 transition-opacity duration-300 lg:hidden"
+          onClick={() => setOpen(false)}
+        />
+      )}
+      <aside
+        className={`fixed right-0 top-0 z-50 flex h-full w-72 flex-col gap-2 bg-white p-6 shadow-lift transition-transform duration-300 ease-in-out lg:hidden ${
+          open ? "translate-x-0" : "translate-x-full"
+        }`}
+      >
+        <button
+          onClick={() => setOpen(false)}
+          aria-label="Close menu"
+          className="mb-4 self-end text-maroon"
+        >
+          <FaXmark size={24} />
+        </button>
+        {navItems.map((item) => (
+          <Link
+            key={item.href}
+            href={item.href}
+            className={`rounded-lg px-3 py-2 font-medium transition-colors hover:bg-saffron/10 hover:text-saffron ${
+              pathname === item.href ? "text-saffron" : "text-stone-700"
+            }`}
+          >
+            {t(item.key)}
+          </Link>
+        ))}
+        <div className="mt-2 border-t border-stone-200 pt-3 pl-3 text-sm text-stone-500">
+          <Link href="/arti-sangrah/aarti" className="block py-1 hover:text-saffron">• {t("nav.aarti")}</Link>
+          <Link href="/arti-sangrah/chalisa" className="block py-1 hover:text-saffron">• {t("nav.chalisa")}</Link>
+          <Link href="/arti-sangrah/bhajan" className="block py-1 hover:text-saffron">• {t("nav.bhajan")}</Link>
+        </div>
+      </aside>
     </header>
   );
 }
