@@ -113,4 +113,4 @@ export const contact = {
 
 export const mapEmbed = "https://www.google.com/maps?q=Sidhbali+Baba+Temple+Kotdwar&output=embed";
 export const fbEmbed = "https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fsidhbalibaba&tabs=timeline&width=320&height=400&small_header=true";
-export const youtubeId = "AETFvQonfV8";
+export const youtubeId = "qKTsvgFVCRQ";
