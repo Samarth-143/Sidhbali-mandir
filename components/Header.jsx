@@ -102,7 +102,8 @@ export default function Header() {
               onClick={() => setOpen(false)}
             />
             <motion.aside
-              className="fixed right-0 top-0 z-50 flex h-full w-72 flex-col gap-2 bg-white p-6 shadow-lift lg:hidden"
+              className="fixed right-0 top-0 z-50 flex h-full w-72 flex-col gap-2 p-6 shadow-lift lg:hidden"
+              style={{ backgroundColor: "#FFFFFF" }}
               initial={{ x: "100%" }}
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
