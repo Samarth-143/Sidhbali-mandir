@@ -1,0 +1,75 @@
+{
+  "topbar": { "timing": "Temple opening time : 4:45 AM" },
+  "nav": {
+    "home": "Home",
+    "location": "Location",
+    "artiSangrah": "Aarti Sangrah",
+    "aarti": "Aarti",
+    "chalisa": "Chalisa",
+    "bhajan": "Bhajan",
+    "gallery": "Photo Gallery",
+    "download": "Download",
+    "contact": "Contact Us"
+  },
+  "common": {
+    "learnMore": "Learn more",
+    "recentPosts": "Recent Posts",
+    "categories": "Categories",
+    "followFb": "Follow Us on Facebook",
+    "nearby": "Nearby Attractions",
+    "planVisit": "Plan Your Visit",
+    "share": "Share",
+    "download": "Download",
+    "posts": "posts",
+    "publishedOn": "Published on"
+  },
+  "home": {
+    "heroTitle": "Shree Sidhbali Baba Dham",
+    "heroTagline": "A sacred abode of Lord Hanuman on the banks of the Khoh river",
+    "heroIntro": "Shri Sidhbali Baba Dham is situated in Kotdwar, Garhwal, Uttarakhand — about 230 km from Delhi and 76 km from Haridwar. Devotees from across the country visit this holy shrine to seek the blessings of Sidhbali Baba.",
+    "historyTitle": "History & Significance",
+    "sevas": "Sevas",
+    "sevasDesc": "Offer seva and participate in the daily rituals, bhandara and special pujas at the temple.",
+    "darshan": "Darshan",
+    "darshanDesc": "The temple is open for darshan from 5:00 AM to 9:00 PM, every day of the week.",
+    "accommodation": "Accommodation",
+    "accommodationDesc": "Dharamshalas and guest houses are available near the temple for visiting devotees.",
+    "watchVideo": "Watch Video",
+    "journeyTitle": "Join the Divine Journey",
+    "journeySlogan": "जय श्री राम | जय बजरंगबली",
+    "galleryTitle": "Temple Gallery",
+    "blogTitle": "Latest Aarti, Chalisa & Bhajan"
+  },
+  "location": {
+    "title": "Location - How to Reach Sidhbali Temple",
+    "subtitle": "यात्रा मार्गदर्शिका – श्री सिध्बली हनुमान मंदिर, कोटद्वार",
+    "howToReach": "How to Reach?",
+    "bestTime": "Best Time to Visit",
+    "timings": "Temple Darshan Timings",
+    "facilities": "Facilities at the Temple"
+  },
+  "artiSangrah": {
+    "title": "Aarti Sangrah",
+    "desc": "A devotional collection of Aarti, Chalisa and Bhajans dedicated to Lord Hanuman and Sidhbali Baba.",
+    "recent": "Recent from the Collection"
+  },
+  "gallery": { "title": "Photo Gallery", "desc": "Glimpses of Shri Sidhbali Baba Dham, Kotdwar.", "videos": "Videos" },
+  "download": { "title": "Downloads", "desc": "Devotional resources to read, listen and keep with you." },
+  "contact": {
+    "title": "Contact Us",
+    "name": "Name",
+    "email": "Email",
+    "subject": "Subject",
+    "message": "Message (optional)",
+    "submit": "Send Message",
+    "success": "Thank you! Your message has been sent.",
+    "error": "Please fill in all required fields correctly.",
+    "phoneLabel": "Phone",
+    "addressLabel": "Address",
+    "emailLabel": "Email"
+  },
+  "footer": {
+    "rights": "© 2025 Shri Sidhbali Baba Dham. All rights reserved.",
+    "credit": "Made with devotion"
+  }
+}
