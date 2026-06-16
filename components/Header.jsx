@@ -53,9 +53,9 @@ function MobileMenu({ open, onClose, t, pathname }) {
         style={{ backgroundColor: "rgba(0,0,0,0.5)" }}
       />
       <aside
-        className="absolute right-0 top-0 flex h-full w-72 flex-col gap-2 p-6 shadow-lift"
+        className="absolute right-0 top-0 flex h-full w-72 flex-col gap-2 p-6 shadow-lift border-l border-white/30 backdrop-blur-2xl"
         style={{
-          backgroundColor: "#FFFFFF",
+          backgroundColor: "rgba(255, 249, 239, 0.78)",
           transform: open ? "translateX(0)" : "translateX(100%)",
           transition: "transform 0.3s ease-in-out",
         }}
